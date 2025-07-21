@@ -43,3 +43,10 @@ creating new branch
 git commit -m "adding new branch"
 git push origin megha
  history
+
+
+
+
+ Pull request 
+ merging two branch 
+ in github create pull request
