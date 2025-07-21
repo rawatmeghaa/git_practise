@@ -34,3 +34,12 @@ local to github ========init ,add  , commit , push
 now , github commit how it reflect in git 
 
 git pull origin master
+
+
+creating new branch
+
+ git checkout -b megha
+ git add .
+git commit -m "adding new branch"
+git push origin megha
+ history
