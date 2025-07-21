@@ -26,7 +26,9 @@ if issue happen  , create PAT token go to incon then setting --devloper setting 
 
 git remote set-url origin http://pattoken@github.com/rawatmeghaa/git_practise.git
 
-git clone 
+git clone  
 github -github =======fork 
 github - local =========clone
 local to github ========init ,add  , commit , push
+
+now , github commit how it reflect in git 
