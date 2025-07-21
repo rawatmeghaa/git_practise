@@ -1,0 +1,32 @@
+git init   // intialize the empty git repo
+git add .     untrached (local) to stage 
+git commit -m "added megha.py filr"     stage to track
+
+untrached    -----------stage -----------------track
+git status
+git rm --cache megha.py    stage to untrack
+git status
+git commit -m "added megha.py filr"
+git add .    
+git status
+git commit -m "added megha.py filr"
+rm megha.py
+git restore megha.py   restore delete file
+history
+
+
+
+create github repo
+
+git remote add origin https://github.com/rawatmeghaa/git_practise.git
+git push -u origin master
+
+if issue happen  , create PAT token go to incon then setting --devloper setting create pat token
+
+
+git remote set-url origin http://pattoken@github.com/rawatmeghaa/git_practise.git
+
+git clone 
+github -github =======fork 
+github - local =========clone
+local to github ========init ,add  , commit , push
