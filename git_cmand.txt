@@ -32,3 +32,5 @@ github - local =========clone
 local to github ========init ,add  , commit , push
 
 now , github commit how it reflect in git 
+
+git pull origin master
