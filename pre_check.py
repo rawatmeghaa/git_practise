@@ -1,7 +1,4 @@
-def my_function(){
+def my_function():
     a=2
-    b-5
-    return d
-}
+    b=5
 
-megha();
