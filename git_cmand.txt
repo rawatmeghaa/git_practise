@@ -47,6 +47,99 @@ git push origin megha
 
 
 
- Pull request 
- merging two branch 
- in github create pull request
+============Rebase=======================================
+
+merge karne se pehle yeh confirm karna chahti ho ki master updated hai ya nahi, aur tumhare changes uske latest version ke upar hain — toh rebase exactly wahi karta hai
+git checkout feature-login
+git fetch origin        # Remote se latest master lane ke liye
+git rebase origin/master
+git checkout master
+git merge feature-login
+
+======================Merging===============================
+
+ab aap kisi branch (jaise feature-1) ke code ko main branch (jaise main ya master) mein merge karna chahte ho, to aap Pull Request (PR) create karte ho.
+
+Ye process allow karta hai:
+
+Code review
+
+Automated checks (tests, CI/CD)
+
+Team approval
+
+
+Pull Request ka use hota hai do branches ko merge karne ke liye.
+Jaise: feature branch se main branch mein code merge karna.
+GitHub par Pull Request create karke code review aur merge process follow hoti hai.
+
+
+
+
+
+
+
+
+
+========================Git hooks============================
+Git Hooks aise automatic scripts hote hain jo git ke kisi specific event par run hote hain — jaise
+pre-commit
+pre-push
+post-commit
+post-push
+
+Ye hooks help karte hain:
+
+Code lint karne mein
+
+Tests run karne mein
+
+Format check karne mein (e.g. black, pylint)
+
+Syntax errors pakadne mein before code commit
+
+
+"""Jab bhi git commit karte ho:
+Ye pre-commit hook run hota hai
+
+Agar koi galti milti hai (e.g. pylint fail), commit ruk jata hai
+
+Tab tak nahi hota jab tak galti fix na ho """""""
+
+ stage ====githooks ============tracked 4
+
+
+
+
+
+
+
+
+
+
+
+
+ ==========Github actions ========
+ GitHub Actions is a CI/CD (Continuous Integration and Continuous Deployment) tool built into GitHub.
+It allows you to automate tasks like:
+
+Running tests
+
+Building code
+
+Linting (e.g., flake8, pylint)
+
+Deploying applications (to AWS, Kubernetes, Docker, etc.)
+
+Triggering workflows on events (e.g., push, pull_request, issue, etc.)
+
+
+
+got to actions
+How its works?
+create a folder and file
+.github/workflows/python-ci.yml
+
+
+
+
